@@ -12,7 +12,7 @@ public:
     }
     
     //parameterize constructor declaration.It will implement outside of the class
-    Rectangle(int l,int b);
+    Rectangle(int l,int b);//constructor overloaded
 
     int getlenth(){
     return lenth;
@@ -35,11 +35,11 @@ Rectangle::Rectangle(int l,int b){
 lenth=l;breath=b;
 }
 
-Rectangle:: area(){
+int Rectangle:: area(){
     return lenth*breath;
 }
 
-Rectangle::perimeter(){
+int Rectangle::perimeter(){
     return 2*(lenth+breath);
 }
 
